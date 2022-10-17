@@ -1,0 +1,46 @@
+.location {
+  &__item {
+    &__infos {
+      display: flex;
+      margin-bottom: 34px;
+      justify-content: space-between;
+      align-items: center;
+      &__right {
+      }
+      &__left {
+      }
+    }
+    &__dropdown-menus {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__equipments {
+      width: 47%;
+    }
+    &__description {
+      width: 47%;
+    }
+
+    &__rating,
+    &__tags {
+      margin-top: 23px;
+    }
+
+    &__title {
+      h1 {
+        margin: 0;
+      }
+    }
+    &__location {
+      h2 {
+        margin: 0;
+      }
+    }
+    &__tags {
+    }
+    &__user-card {
+    }
+    &__rating {
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@import './../../style/variables.scss';
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.error404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  * {
+    color: $main-color !important;
+    margin: 0;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 288px;
+    @media screen and (max-width: 892px) {
+      font-size: 120px;
+    }
+  }
+  h2 {
+    font-size: 36px;
+    @media screen and (max-width: 892px) {
+      font-size: 18px;
+    }
+  }
+  span {
+    margin-top: 150px;
+    font-size: 18px;
+    @media screen and (max-width: 592px) {
+      font-size: 14px;
+    }
+  }
+}

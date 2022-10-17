@@ -1,0 +1,11 @@
+.rating {
+  display: flex;
+  justify-content: flex-end;
+
+  &__full-icons {
+    display: flex;
+  }
+  &__empty-icons {
+    display: flex;
+  }
+}

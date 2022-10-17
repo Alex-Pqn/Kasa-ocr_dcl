@@ -1,0 +1,56 @@
+@import './../../style/variables.scss';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  @media screen and (max-width: 592px) {
+    padding-top: 20px;
+  }
+
+  &__logo,
+  &__nav {
+    width: 50%;
+  }
+
+  &__logo {
+    img {
+      width: 210.32px;
+      @media screen and (max-width: 892px) {
+        width: 175px;
+      }
+      @media screen and (max-width: 592px) {
+        width: 145px;
+      }
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    ul {
+      padding: 0;
+      display: flex;
+      li {
+        padding-left: 57px;
+        font-size: 24px;
+        margin-right: 8px;
+        list-style-type: none;
+        @media screen and (max-width: 892px) {
+          padding-left: 35px;
+          font-size: 18px;
+        }
+        @media screen and (max-width: 592px) {
+          padding-left: 10px;
+          font-size: 12px;
+        }
+        a {
+          color: $main-color;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

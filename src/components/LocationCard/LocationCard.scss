@@ -1,0 +1,43 @@
+@import '../../style/variables.scss';
+
+.locationCard {
+  position: relative;
+  margin: 25px 13px;
+  width: 25%;
+  height: 340px;
+  display: flex;
+  align-items: flex-end;
+
+  @media screen and (max-width: 1200px) {
+    width: 43%;
+  }
+  @media screen and (max-width: 892px) {
+    width: 82%;
+  }
+  @media screen and (max-width: 592px) {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  a {
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    span {
+      padding: 8px 14px;
+      color: white;
+    }
+  }
+
+  img {
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}

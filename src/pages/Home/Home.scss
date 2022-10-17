@@ -1,0 +1,56 @@
+.home {
+  &__banner {
+    position: relative;
+    height: 223px;
+    margin-top: 63px;
+    @media screen and (max-width: 592px) {
+      margin-top: 16px;
+      height: 111px;
+      margin-top: 33px;
+    }
+    &__layer {
+      height: 100%;
+      width: 100%;
+      border-radius: 25px;
+      background-color: black;
+      @media screen and (max-width: 592px) {
+        border-radius: 10px;
+      }
+      img {
+        opacity: 70%;
+        border-radius: 25px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        @media screen and (max-width: 592px) {
+          border-radius: 10px;
+        }
+      }
+    }
+    span {
+      font-size: 48px;
+      color: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      @media screen and (max-width: 592px) {
+        font-size: 24px;
+        left: 20%;
+        transform: translate(-20%, -50%);
+      }
+    }
+  }
+  &__location-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 592px) {
+      background-color: #f6f6f6;
+      padding: 56px 50px;
+      border-radius: 25px;
+      margin-top: 43px;
+    }
+  }
+}
