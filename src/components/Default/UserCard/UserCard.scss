@@ -1,0 +1,24 @@
+@import './../../../style/index';
+
+.user-card {
+  display: flex;
+  align-items: center;
+
+  &__container {
+    margin: 0 15px;
+  }
+
+  &__name {
+    span {
+      font-size: 18px;
+      color: $main-color;
+    }
+  }
+
+  &__avatar {
+    img {
+      border-radius: 50em;
+      width: 64px;
+    }
+  }
+}
