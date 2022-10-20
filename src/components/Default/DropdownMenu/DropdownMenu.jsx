@@ -1,37 +1,31 @@
-import React, { useEffect } from 'react';
-import ArrowUpIcon from '../../Icon/ArrowUp/ArrowUp';
+import React from 'react';
 import ArrowDownIcon from '../../Icon/ArrowDown/ArrowDown';
 
 import './DropdownMenu.scss';
 
 const DropdownMenu = ({ title, text, list }) => {
-  useEffect(() => {
-    console.log(list);
-  });
+  const toggleDropdownMenu = () =>
+    document.getElementById(title).classList.toggle('dropdown-menu--active');
 
   return (
-    <div className="dropdown-menu">
-      <nav>
-        <label htmlFor={title}>
-          <span>
-            {title} <ArrowDownIcon />
-          </span>
-        </label>
-        <input type="checkbox" id={title} />
+    <nav id={title} className="dropdown-menu">
+      <div onClick={toggleDropdownMenu} className="dropdown-menu__head">
+        <span>{title}</span>
+        <ArrowDownIcon />
+      </div>
 
+      <div className="dropdown-menu__slide">
         {text ? (
-          <div className="slide">
-            <p>{text}</p>
-          </div>
+          <p>{text}</p>
         ) : (
-          <ul className="slide">
+          <ul>
             {list.map((item, index) => (
               <li key={index}>{item}</li>
             ))}
           </ul>
         )}
-      </nav>
-    </div>
+      </div>
+    </nav>
   );
 };
 
