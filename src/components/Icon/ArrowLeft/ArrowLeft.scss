@@ -1,0 +1,12 @@
+.arrow-left-icon {
+  svg {
+    height: 46.68px;
+    fill: #ffffff;
+    @media screen and (max-width: 892px) {
+      height: 32px;
+    }
+    @media screen and (max-width: 592px) {
+      height: 19px;
+    }
+  }
+}
