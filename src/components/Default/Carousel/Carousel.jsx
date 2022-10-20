@@ -12,10 +12,12 @@ const Carousel = ({ picturesUrl }) => {
   const maxItems = items.length;
   const maxItemIndexes = maxItems - 1;
 
-  const isThereOnlyOneItem = useCallback(() => {
+  const isThereASingleItem = useCallback(() => {
     return items.length <= 1;
   }, [items]);
 
+  // Static carousel
+  // Turn off the added layer for navigation
   const staticCarousel = () =>
     document
       .getElementsByClassName('carousel')[0]
@@ -63,9 +65,9 @@ const Carousel = ({ picturesUrl }) => {
   // => Static carousel if less than one item
   // => Loop carousel from the start
   useEffect(() => {
-    if (isThereOnlyOneItem()) staticCarousel();
+    if (isThereASingleItem()) staticCarousel();
     loopFromStart();
-  }, [loopFromStart, isThereOnlyOneItem]);
+  }, [loopFromStart, isThereASingleItem]);
 
   return (
     <div className="carousel">
