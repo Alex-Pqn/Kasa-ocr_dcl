@@ -12,6 +12,9 @@
     span {
       font-size: 18px;
       color: $main-color;
+      @media screen and (max-width: 592px) {
+        font-size: 12px;
+      }
     }
   }
 
@@ -19,6 +22,9 @@
     img {
       border-radius: 50em;
       width: 64px;
+      @media screen and (max-width: 592px) {
+        width: 32px;
+      }
     }
   }
 }

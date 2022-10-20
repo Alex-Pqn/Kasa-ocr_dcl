@@ -1,10 +1,16 @@
 @import './../../../style/index';
 
 .tag {
-  margin-right: 10px;
+  margin: 4px 10px 4px 0;
   font-size: 14px;
   padding: 3px 35px;
   border-radius: 10px;
   color: white;
   background-color: $main-color;
+  @media screen and (max-width: 892px) {
+    font-size: 12px;
+  }
+  @media screen and (max-width: 592px) {
+    font-size: 10px;
+  }
 }

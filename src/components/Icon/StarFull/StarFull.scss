@@ -4,5 +4,11 @@
   svg {
     width: 30px;
     fill: $main-color;
+    @media screen and (max-width: 892px) {
+      width: 22px;
+    }
+    @media screen and (max-width: 592px) {
+      width: 15px;
+    }
   }
 }
