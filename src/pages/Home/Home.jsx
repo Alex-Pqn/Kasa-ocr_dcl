@@ -1,17 +1,19 @@
-import banner from './../../assets/home-banner.png';
+import homeBanner from './../../assets/home-banner.png';
 import './Home.scss';
 
 import LocationCard from './../../components/LocationCard/LocationCard';
 import Locations from './../../assets/logements.json';
+import Banner from '../../components/Default/Banner/Banner';
 
 function Home() {
   return (
     <div className="home">
       <header className="home__banner">
-        <div className="home__banner__layer">
-          <img src={banner} className="home-banner" alt="banner" />
-        </div>
-        <span>Chez vous, partout et ailleurs</span>
+        <Banner
+          text="Chez vous, partout et ailleurs"
+          bannerUrl={homeBanner}
+          bannerAlt="Paysage"
+        />
       </header>
       <section className="home__location-cards">
         {Locations.map((location, index) => (
