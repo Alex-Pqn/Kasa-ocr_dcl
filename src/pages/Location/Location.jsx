@@ -6,6 +6,7 @@ import UserCard from '../../components/Default/UserCard/UserCard';
 import Rating from '../../components/Default/Rating/Rating';
 import DropdownMenu from '../../components/Default/DropdownMenu/DropdownMenu';
 import Locations from './../../assets/logements.json';
+import Carousel from '../../components/Default/Carousel/Carousel';
 
 import { useParams } from 'react-router-dom';
 import { Navigate } from 'react-router';
@@ -23,7 +24,7 @@ function Location() {
   return (
     <div className="location">
       <header className="location__banner">
-        {/* <Carousel pictures={location.pictures} /> */}
+        <Carousel picturesUrl={location.pictures} />
       </header>
       <section className="location__item">
         <div className="location__item__infos">
@@ -53,10 +54,10 @@ function Location() {
           </div>
         </div>
         <div className="location__item__dropdown-menus">
-          <div className="location__item__description">
+          <div className="dropdown-menus__container dropdown-menus__description">
             <DropdownMenu title="Description" text={location.description} />
           </div>
-          <div className="location__item__equipments">
+          <div className="dropdown-menus__container dropdown-menus__equipments">
             <DropdownMenu title="Équipements" list={location.equipments} />
           </div>
         </div>
