@@ -14,15 +14,17 @@ function App() {
   return (
     <div className="app">
       <Header />
-      <Routes>
-        <Route path="/">
-          <Route index element={<Home />} />
-          <Route path="home" element={<Navigate to="/" />} />
-          <Route path="about" element={<About />} />
-          <Route path="*" element={<Error404 />} />
-          <Route path="location/:id" element={<Location />} />
-        </Route>
-      </Routes>
+      <main>
+        <Routes>
+          <Route path="/">
+            <Route index element={<Home />} />
+            <Route path="home" element={<Navigate to="/" />} />
+            <Route path="about" element={<About />} />
+            <Route path="*" element={<Error404 />} />
+            <Route path="location/:id" element={<Location />} />
+          </Route>
+        </Routes>
+      </main>
       <Footer />
     </div>
   );
