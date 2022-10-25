@@ -1,25 +1,45 @@
-import React from 'react';
+import './Location.scss';
+
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
+
+import { locationService } from '../../_services/location.service.js';
+import { handleError } from '../../_helpers/handle-error';
+
 import Subtitle from '../../components/Default/Subtitle/Subtitle';
 import Title from '../../components/Default/Title/Title';
 import Tag from '../../components/Default/Tag/Tag';
 import UserCard from '../../components/Default/UserCard/UserCard';
 import Rating from '../../components/Default/Rating/Rating';
 import DropdownMenu from '../../components/Default/DropdownMenu/DropdownMenu';
-import Locations from './../../assets/logements.json';
 import Carousel from '../../components/Default/Carousel/Carousel';
-
-import { useParams } from 'react-router-dom';
-import { Navigate } from 'react-router';
-
-import './Location.scss';
+import Error404 from '../../pages/Error404/Error404';
 
 function Location() {
   const { id } = useParams();
-  const location = Locations.find((location) => location.id === id);
 
-  if (!location) return <Navigate to="/not/found" />;
+  let [location, setLocation] = useState();
+  let [isLoading, setLoading] = useState(true);
+  let [error, setError] = useState('');
 
-  document.title = location.title;
+  useEffect(() => {
+    locationService
+      .findOne({ id })
+      .then((location) => {
+        setLocation(location);
+        document.title = location.title;
+
+        setLoading(false);
+      })
+      .catch((err) => {
+        handleError.err(err);
+        setError(err);
+      });
+  }, [id]);
+
+  if (error) return <Error404 />;
+
+  if (isLoading) return <span>Loading location..</span>;
 
   return (
     <div className="location">
