@@ -13,8 +13,8 @@ import Footer from './components/Footer/Footer';
 function App() {
   return (
     <div className="app">
-      <Header />
-      <main>
+      <div className="app--horizontal-padding">
+        <Header />
         <Routes>
           <Route path="/">
             <Route index element={<Home />} />
@@ -24,7 +24,7 @@ function App() {
             <Route path="location/:id" element={<Location />} />
           </Route>
         </Routes>
-      </main>
+      </div>
       <Footer />
     </div>
   );
