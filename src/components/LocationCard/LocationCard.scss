@@ -2,21 +2,29 @@
 
 .locationCard {
   position: relative;
-  margin: 25px 13px;
-  width: 25%;
+  margin: 25px 33px;
+  width: 340px;
   height: 340px;
   display: flex;
   align-items: flex-end;
 
-  @media screen and (max-width: 1200px) {
-    width: 43%;
-  }
   @media screen and (max-width: 892px) {
     width: 82%;
   }
+  @media screen and (max-width: 792px) {
+    height: 320px;
+  }
+  @media screen and (max-width: 692px) {
+    height: 295px;
+  }
   @media screen and (max-width: 592px) {
-    width: 100%;
+    height: 285px;
+    width: 90%;
     margin: 10px 0;
+  }
+  @media screen and (max-width: 392px) {
+    width: 100%;
+    height: 255px;
   }
 
   a {
