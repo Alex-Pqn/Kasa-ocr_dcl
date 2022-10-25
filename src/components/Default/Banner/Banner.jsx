@@ -1,5 +1,6 @@
-import { useEffect } from 'react';
 import './Banner.scss';
+
+import { useEffect } from 'react';
 
 const Banner = ({ isExtended, text, bannerUrl, bannerAlt }) => {
   useEffect(() => {

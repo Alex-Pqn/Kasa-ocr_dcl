@@ -1,8 +1,9 @@
+import './Carousel.scss';
+
+import { useEffect, useState, useCallback } from 'react';
+
 import ArrowRightIcon from '../../Icon/ArrowRight/ArrowRight';
 import ArrowLeftIcon from '../../Icon/ArrowLeft/ArrowLeft';
-
-import './Carousel.scss';
-import { useEffect, useState, useCallback } from 'react';
 
 const Carousel = ({ picturesUrl }) => {
   let [activeItem, setActiveItem] = useState();

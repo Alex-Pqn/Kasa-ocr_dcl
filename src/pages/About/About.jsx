@@ -1,8 +1,8 @@
+import './About.scss';
+
 import aboutBanner from './../../assets/about-banner.png';
 import DropdownMenu from '../../components/Default/DropdownMenu/DropdownMenu';
 import Banner from '../../components/Default/Banner/Banner';
-
-import './About.scss';
 
 function About() {
   return (

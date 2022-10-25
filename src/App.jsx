@@ -1,4 +1,4 @@
-import './style/_index.scss';
+import './style/style.scss';
 
 import { Routes, Route, Navigate } from 'react-router-dom';
 
@@ -9,8 +9,13 @@ import About from './pages/About/About';
 import Error404 from './pages/Error404/Error404';
 import Location from './pages/Location/Location';
 import Footer from './components/Footer/Footer';
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+    document.title = 'Kasa';
+  });
+
   return (
     <div className="app">
       <div className="app--horizontal-padding">

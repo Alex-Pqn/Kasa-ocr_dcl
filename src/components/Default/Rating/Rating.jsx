@@ -1,7 +1,7 @@
+import './Rating.scss';
+
 import StarEmptyIcon from '../../Icon/StarEmpty/StarEmpty';
 import StarFullIcon from '../../Icon/StarFull/StarFull';
-
-import './Rating.scss';
 
 const Rating = ({ currentRating, maxRating }) => {
   return (

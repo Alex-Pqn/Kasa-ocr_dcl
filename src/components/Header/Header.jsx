@@ -2,7 +2,6 @@ import './Header.scss';
 
 import { Link } from 'react-router-dom';
 
-// Assets
 import largeLogo from './../../assets/large-logo.png';
 
 function Header() {

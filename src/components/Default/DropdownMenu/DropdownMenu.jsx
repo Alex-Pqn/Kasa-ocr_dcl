@@ -1,7 +1,7 @@
+import './DropdownMenu.scss';
+
 import React from 'react';
 import ArrowDownIcon from '../../Icon/ArrowDown/ArrowDown';
-
-import './DropdownMenu.scss';
 
 const DropdownMenu = ({ title, text, list }) => {
   const toggleDropdownMenu = () =>
