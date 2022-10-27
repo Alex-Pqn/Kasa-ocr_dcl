@@ -3,7 +3,7 @@ import './Home.scss';
 import { useEffect, useState } from 'react';
 
 import { locationService } from '../../_services/location.service.js';
-import { handleError } from '../../_helpers/handle-error.js';
+import { requestHandler } from '../../_helpers/request-handler.js';
 
 import LocationCard from './../../components/LocationCard/LocationCard';
 import Banner from '../../components/Default/Banner/Banner';
@@ -22,7 +22,7 @@ function Home() {
         setLoading(false);
       })
       .catch((err) => {
-        handleError.err(err);
+        requestHandler.error(err);
         setError(err);
       });
   }, []);

@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
 import { locationService } from '../../_services/location.service.js';
-import { handleError } from '../../_helpers/handle-error';
+import { requestHandler } from '../../_helpers/request-handler';
 
 import Subtitle from '../../components/Default/Subtitle/Subtitle';
 import Title from '../../components/Default/Title/Title';
@@ -32,7 +32,7 @@ function Location() {
         setLoading(false);
       })
       .catch((err) => {
-        handleError.err(err);
+        requestHandler.error(err);
         setError(err);
       });
   }, [id]);
