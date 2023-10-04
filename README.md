@@ -1,6 +1,7 @@
-![Kasa Icon](/src/assets/footer-logo.png)
+![Kasa Icon](/src/assets/logo.png)
 
 ## Développez une application Web avec React et React Router - Kasa
+
 ### P11 - OpenClassrooms "Développeur Concepteur Logiciel"
 
 #### Contexte du projet
@@ -13,17 +14,17 @@ Le site de Kasa a été codé il y a maintenant plus de 10 ans en ASP.NET avec u
 
 Un point est prévu avec la CTO plus tard dans la semaine, mais pour que vous puissiez vous familiariser avec les enjeux de votre mission vous trouvez le récapitulatif suivant :
 
-***Ton objectif***
+**_Ton objectif_**
 
-Démarrer le projet React et développer l’ensemble de l’application, les composants React, les routes React Router, en suivant les maquettes (responsives !) et toutes les infos que je te donne ci-dessous. Et ce avec un code de qualité ! 
+Démarrer le projet React et développer l’ensemble de l’application, les composants React, les routes React Router, en suivant les maquettes (responsives !) et toutes les infos que je te donne ci-dessous. Et ce avec un code de qualité !
 
-***Back-end / data***
+**_Back-end / data_**
 
 Le recrutement de la personne en charge du Back-End n'est pas terminé et va prendre plus de temps que prévu. Du coup, il va falloir que tu fasses sans pour le moment. Je t'ai extrait les 20 dernières annonces de logements dans [ce fichier JSON](./public/logements.json) pour que tu puisses construire le Front qui correspond.
 
-***Design***
+**_Design_**
 
-Voici [les maquettes](./src/assets/Kasa%20maquettes.pdf) pour le design de l'interface. 
+Voici [les maquettes](./src/assets/Kasa%20maquettes.pdf) pour le design de l'interface.
 
 Tu trouveras toutes les ressources dont tu as besoin directement dans la maquette (logo, icônes pour les composants, etc.). Sur les vignettes des logements, pour les images de couverture, j'ai mis une rectangle orange que tu peux remplacer par l'image.
 
@@ -32,6 +33,7 @@ Tu trouveras toutes les ressources dont tu as besoin directement dans la maquett
 Ça y est, vous avez toutes les informations nécessaires, vous pouvez démarrer votre développement !
 
 #### Objectifs
+
 - Site web créé sous React 18.2 et React Router 6.4
 - Respect des [maquettes fournies](./src/assets/Kasa%20maquettes.pdf)
 - Utilisation de composants réutilisables et validation des données grâce aux props React
@@ -52,21 +54,25 @@ Tu trouveras toutes les ressources dont tu as besoin directement dans la maquett
 ## Project setup
 
 ### Install
+
 ```
 npm install
 ```
 
 ### Compiles and hot-reloads for development
+
 Runs the app in the development mode.
 
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes. You may also see any lint errors in the console.
+
 ```
 npm run start
 ```
 
 ### Running tests
+
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
@@ -74,8 +80,8 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 npm run test
 ```
 
-
 ### Compiles and minifies for production
+
 ```
 npm run build
 ```
@@ -88,8 +94,8 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-
 ### Eject
+
 ```
 npm run eject
 ```
