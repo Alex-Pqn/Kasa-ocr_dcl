@@ -43,13 +43,9 @@ Tu trouveras toutes les ressources dont tu as besoin directement dans la maquett
 - Utilisation de Sass et de la méthodologie BEM
 - Responsive
 
----
-
-### Prerequisites
+## Prerequisites
 
 - You will need to have Node and `npm` installed locally on your machine.
-
----
 
 ## Project setup
 
@@ -108,9 +104,7 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
----
-
-### Preview
+## Preview
 
 ![Kasa](/src/assets/Kasa.png)
 <br/>
