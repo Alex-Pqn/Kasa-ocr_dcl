@@ -32,7 +32,7 @@ Tu trouveras toutes les ressources dont tu as besoin directement dans la maquett
 
 Ça y est, vous avez toutes les informations nécessaires, vous pouvez démarrer votre développement !
 
-#### Objectifs
+#### Objectifs réalisés
 
 - Site web créé sous React 18.2 et React Router 6.4
 - Respect des [maquettes fournies](./src/assets/Kasa%20maquettes.pdf)
