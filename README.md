@@ -28,7 +28,7 @@ Voici [les maquettes](./src/assets/Kasa%20maquettes.pdf) pour le design de l'int
 
 Tu trouveras toutes les ressources dont tu as besoin directement dans la maquette (logo, icônes pour les composants, etc.). Sur les vignettes des logements, pour les images de couverture, j'ai mis une rectangle orange que tu peux remplacer par l'image.
 
-> Quelques [**contraintes techniques**](./src/assets/Contraintes%20techniques.pdf) supplémentaires
+> Quelques [**contraintes techniques**](https://github.com/Alex-Pqn/Kasa-ocr_dcl/blob/main/src/assets/Contraintes%20techniques.pdf) supplémentaires
 
 Ça y est, vous avez toutes les informations nécessaires, vous pouvez démarrer votre développement !
 
