@@ -57,6 +57,9 @@ Tu trouveras toutes les ressources dont tu as besoin directement dans la maquett
 
 ### Install
 
+> [!NOTE]
+> A [Github Pages preview](https://alex-pqn.github.io/Kasa-ocr_dcl/) is also available for this project
+
 ```
 npm install
 ```
