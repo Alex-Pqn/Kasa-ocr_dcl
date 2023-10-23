@@ -47,6 +47,10 @@ Tu trouveras toutes les ressources dont tu as besoin directement dans la maquett
 
 - You will need to have Node and `npm` installed locally on your machine.
 
+| Node Version | Supported          |
+| ------------ | ------------------ |
+| 18.x         | :white_check_mark: |
+
 ## Project setup
 
 ### Install
