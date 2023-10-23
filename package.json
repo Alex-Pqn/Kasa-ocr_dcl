@@ -2,7 +2,7 @@
   "name": "kasa-platform",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/Alex-Pqn/Kasa-ocr_dcl",
+  "homepage": "https://alex-pqn.github.io/Kasa-ocr_dcl",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
