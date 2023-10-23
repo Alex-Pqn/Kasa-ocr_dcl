@@ -43,6 +43,8 @@ Tu trouveras toutes les ressources dont tu as besoin directement dans la maquett
 - Utilisation de Sass et de la méthodologie BEM
 - Responsive
 
+### [Prévisualisation du site](https://alex-pqn.github.io/Kasa-ocr_dcl/)
+
 ## Prerequisites
 
 - You will need to have Node and `npm` installed locally on your machine.
