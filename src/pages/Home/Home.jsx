@@ -1,31 +1,31 @@
-import './Home.scss';
+import './Home.scss'
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react'
 
-import { locationService } from '../../_services/location.service.js';
-import { requestHandler } from '../../_helpers/request-handler.js';
+import { locationService } from '../../_services/location.service.js'
+import { requestHandler } from '../../_helpers/request-handler.js'
 
-import LocationCard from './../../components/LocationCard/LocationCard';
-import Banner from '../../components/Default/Banner/Banner';
-import homeBanner from './../../assets/home-banner.png';
+import LocationCard from './../../components/LocationCard/LocationCard'
+import Banner from '../../components/Default/Banner/Banner'
+import homeBanner from './../../assets/home-banner.jpg'
 
 function Home() {
-  let [locations, setLocations] = useState();
-  let [isLoading, setLoading] = useState(true);
-  let [error, setError] = useState('');
+  let [locations, setLocations] = useState()
+  let [isLoading, setLoading] = useState(true)
+  let [error, setError] = useState('')
 
   useEffect(() => {
     locationService
       .findAll()
       .then((locations) => {
-        setLocations(locations);
-        setLoading(false);
+        setLocations(locations)
+        setLoading(false)
       })
       .catch((err) => {
-        requestHandler.error(err);
-        setError(err);
-      });
-  }, []);
+        requestHandler.error(err)
+        setError(err)
+      })
+  }, [])
 
   return (
     <div className="home">
@@ -53,7 +53,7 @@ function Home() {
         )}
       </section>
     </div>
-  );
+  )
 }
 
-export default Home;
+export default Home

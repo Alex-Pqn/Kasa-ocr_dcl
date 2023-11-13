@@ -1,6 +1,6 @@
-import './LocationCard.scss';
+import './LocationCard.scss'
 
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 
 function LocationCard({ id, title, cover }) {
   return (
@@ -10,7 +10,7 @@ function LocationCard({ id, title, cover }) {
         <span>{title}</span>
       </Link>
     </article>
-  );
+  )
 }
 
-export default LocationCard;
+export default LocationCard

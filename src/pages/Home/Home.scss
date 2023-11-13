@@ -12,5 +12,11 @@
       border-radius: 25px;
       margin-top: 43px;
     }
+
+    &::after {
+      content: '';
+      width: 340px;
+      margin: 25px 33px;
+    }
   }
 }

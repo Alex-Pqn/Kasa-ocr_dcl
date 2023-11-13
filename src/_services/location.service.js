@@ -1,5 +1,3 @@
-import { requestOptions } from '../_helpers/request-options'
-
 import locations from '../logements.json'
 
 export const locationService = {

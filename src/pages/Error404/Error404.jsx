@@ -1,6 +1,6 @@
-import './Error404.scss';
+import './Error404.scss'
 
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 
 function Error404() {
   return (
@@ -11,7 +11,7 @@ function Error404() {
         <Link to="/">Retourner sur la page d’accueil</Link>
       </span>
     </div>
-  );
+  )
 }
 
-export default Error404;
+export default Error404

@@ -1,8 +1,8 @@
-import './Header.scss';
+import './Header.scss'
 
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 
-import largeLogo from './../../assets/large-logo.png';
+import largeLogo from './../../assets/large-logo.jpg'
 
 function Header() {
   return (
@@ -23,7 +23,7 @@ function Header() {
         </ul>
       </nav>
     </header>
-  );
+  )
 }
 
-export default Header;
+export default Header

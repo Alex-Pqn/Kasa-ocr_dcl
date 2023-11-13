@@ -1,8 +1,8 @@
-import './About.scss';
+import './About.scss'
 
-import aboutBanner from './../../assets/about-banner.png';
-import DropdownMenu from '../../components/Default/DropdownMenu/DropdownMenu';
-import Banner from '../../components/Default/Banner/Banner';
+import aboutBanner from './../../assets/about-banner.jpg'
+import DropdownMenu from '../../components/Default/DropdownMenu/DropdownMenu'
+import Banner from '../../components/Default/Banner/Banner'
 
 function About() {
   return (
@@ -33,7 +33,7 @@ function About() {
         />
       </section>
     </div>
-  );
+  )
 }
 
-export default About;
+export default About

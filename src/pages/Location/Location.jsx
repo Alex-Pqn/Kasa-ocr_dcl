@@ -1,45 +1,45 @@
-import './Location.scss';
+import './Location.scss'
 
-import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import React, { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
 
-import { locationService } from '../../_services/location.service.js';
-import { requestHandler } from '../../_helpers/request-handler';
+import { locationService } from '../../_services/location.service.js'
+import { requestHandler } from '../../_helpers/request-handler.js'
 
-import Subtitle from '../../components/Default/Subtitle/Subtitle';
-import Title from '../../components/Default/Title/Title';
-import Tag from '../../components/Default/Tag/Tag';
-import UserCard from '../../components/Default/UserCard/UserCard';
-import Rating from '../../components/Default/Rating/Rating';
-import DropdownMenu from '../../components/Default/DropdownMenu/DropdownMenu';
-import Carousel from '../../components/Default/Carousel/Carousel';
-import Error404 from '../../pages/Error404/Error404';
+import Subtitle from '../../components/Default/Subtitle/Subtitle'
+import Title from '../../components/Default/Title/Title'
+import Tag from '../../components/Default/Tag/Tag'
+import UserCard from '../../components/Default/UserCard/UserCard'
+import Rating from '../../components/Default/Rating/Rating'
+import DropdownMenu from '../../components/Default/DropdownMenu/DropdownMenu'
+import Carousel from '../../components/Default/Carousel/Carousel'
+import Error404 from '../../pages/Error404/Error404'
 
 function Location() {
-  const { id } = useParams();
+  const { id } = useParams()
 
-  let [location, setLocation] = useState();
-  let [isLoading, setLoading] = useState(true);
-  let [error, setError] = useState('');
+  let [location, setLocation] = useState()
+  let [isLoading, setLoading] = useState(true)
+  let [error, setError] = useState('')
 
   useEffect(() => {
     locationService
       .findOne({ id })
       .then((location) => {
-        setLocation(location);
-        document.title = location.title;
+        setLocation(location)
+        document.title = location.title
 
-        setLoading(false);
+        setLoading(false)
       })
       .catch((err) => {
-        requestHandler.error(err);
-        setError(err);
-      });
-  }, [id]);
+        requestHandler.error(err)
+        setError(err)
+      })
+  }, [id])
 
-  if (error) return <Error404 />;
+  if (error) return <Error404 />
 
-  if (isLoading) return <span>Loading location..</span>;
+  if (isLoading) return <span>Loading location..</span>
 
   return (
     <div className="location">
@@ -83,7 +83,7 @@ function Location() {
         </div>
       </section>
     </div>
-  );
+  )
 }
 
-export default Location;
+export default Location

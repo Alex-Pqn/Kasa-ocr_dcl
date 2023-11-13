@@ -1,4 +1,4 @@
-![Kasa Icon](/src/assets/logo.png)
+![Kasa Icon](/src/assets/logo.jpg)
 
 ## Développez une application Web avec React et React Router - Kasa
 
@@ -115,12 +115,12 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 ## Preview
 
-![Kasa](/src/assets/Kasa.png)
+![Kasa](/src/assets/Kasa.jpg)
 <br/>
 <br/>
 <br/>
-![Kasa](/src/assets/Kasa%203.png)
+![Kasa](/src/assets/Kasa%203.jpg)
 <br/>
 <br/>
 <br/>
-![Kasa](/src/assets/Kasa%202.png)
+![Kasa](/src/assets/Kasa%202.jpg)
